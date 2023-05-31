@@ -1,0 +1,25 @@
+{
+  "name": "ucode-lang",
+  "displayName": "UCode Lang",
+  "description": "vscode's ucode language server",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ucodelang",
+      "aliases": ["UCodeLang", "ucodelang"],
+      "extensions": [".uc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ucodelang",
+      "scopeName": "source.uc",
+      "path": "./syntaxes/ucodelang.tmLanguage.json"
+    }]
+  }
+}
